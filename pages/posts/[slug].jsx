@@ -18,7 +18,7 @@ export default function Post({ post }) {
           <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
         </article>
         <Link href="/blog">
-          <a>Back to blog</a>
+          <a>{'<--'} Back to blog</a>
         </Link>
       </Layout>
     </>

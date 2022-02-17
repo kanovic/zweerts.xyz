@@ -30,7 +30,7 @@ export default function Layout({ children, home, title, post }) {
       <main>{children}</main>
       {!home && !post && (
         <Link href="/">
-          <a>Back to home</a>
+          <a>{'<--'} Back to home</a>
         </Link>
       )}
     </>

@@ -32,6 +32,7 @@ export default function Blog({ posts, categories }) {
                   <a>{category.subject}</a>
                 </Link>
               </h3>
+              <p>{category.description}</p>
             </li>
           ))}
         </ul>

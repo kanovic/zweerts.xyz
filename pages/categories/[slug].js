@@ -21,7 +21,7 @@ export default function Category({ category }) {
         ))}
       </ul>
       <Link href="/blog">
-        <a>Back to blog</a>
+        <a>{'<--'} Back to blog</a>
       </Link>
     </Layout>
   );

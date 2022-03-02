@@ -9,26 +9,11 @@ export default function Home() {
       <p>
         This is my personal domain where I run my web and email server.
         <br />
-        In the blog section I will post about things that matter to me:
-        <br />
-        <ol>
-          <li>
-            Hobbies:
-            <br />
-            <ul>
-              <li>Underground music</li>
-              <li>Golf</li>
-              <li>Technology</li>
-            </ul>
-          </li>
-          <br />
-          <li>
-            {"'"}Freelancing{"'"} under the name{' '}
-            <a href="https://koeneraad.com" target={'_blank'} rel="noreferrer">
-              <em>Koeneraad</em>
-            </a>
-          </li>
-        </ol>
+        In the blog section I will post about things that matter to me like
+        hobbies and {"'"}freelancing{"'"} under the name{' '}
+        <a href="https://koeneraad.com" target={'_blank'} rel="noreferrer">
+          <em>Koeneraad</em>
+        </a>
       </p>
       <h2>About me</h2>
       <p>

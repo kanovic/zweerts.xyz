@@ -1,13 +1,19 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import { ColorModeScript } from '@chakra-ui/react';
+import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
 
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  );
+export default class Document extends NextDocument {
+  render() {
+    return (
+      <Html lang="en">
+        <Head>
+          <meta name="description" content="My personal domain for the web" />
+        </Head>
+        <body>
+          <ColorModeScript />
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }

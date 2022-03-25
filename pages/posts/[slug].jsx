@@ -1,27 +1,52 @@
 import { getAllPostsSlugs, getPostData } from '../../lib/posts';
 import { getCategoryBySlug } from '../../lib/categories';
 import Date from '../../components/date';
-import Link from 'next/link';
+import NextLink from 'next/link';
 import Layout from '../../components/layout';
+import {
+  Stack,
+  Box,
+  Badge,
+  Link,
+  Heading,
+  Text,
+  Button,
+  StackDivider,
+} from '@chakra-ui/react';
 
 export default function Post({ post }) {
   return (
-    <>
-      <Layout post title={post.title}>
-        <article>
-          <h2>{post.title}</h2>
-          <Date datestring={post.date} />
-          Category:{' '}
-          <Link href={post.category.permalink}>
-            <a>{post.category.subject}</a>
-          </Link>
-          <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-        </article>
-        <Link href="/blog">
-          <a>{'<--'} Back to blog</a>
-        </Link>
-      </Layout>
-    </>
+    <Layout post title={post.title}>
+      <Stack
+        divider={<StackDivider />}
+        as={'article'}
+        spacing={'5'}
+        paddingX={'8'}
+        direction={'column'}
+      >
+        <Box>
+          <Heading size={'lg'}>{post.title}</Heading>
+          <Text as={'small'}>
+            <Date datestring={post.date} />
+          </Text>
+          <Badge>
+            <NextLink href={post.category.permalink}>
+              <Link color={'teal.500'}>{post.category.subject}</Link>
+            </NextLink>
+          </Badge>
+        </Box>
+
+        <Box dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+
+        <Box>
+          <Button colorScheme="teal" size="md">
+            <NextLink href="/blog">
+              <Link>Back to blog</Link>
+            </NextLink>
+          </Button>
+        </Box>
+      </Stack>
+    </Layout>
   );
 }
 

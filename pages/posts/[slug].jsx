@@ -39,11 +39,11 @@ export default function Post({ post }) {
         <Box dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
 
         <Box>
-          <Button colorScheme="teal" size="md">
-            <NextLink href="/blog">
-              <Link>Back to blog</Link>
-            </NextLink>
-          </Button>
+          <NextLink href="/blog">
+            <Button colorScheme="teal" size="sm">
+              Back to blog
+            </Button>
+          </NextLink>
         </Box>
       </Stack>
     </Layout>

@@ -32,10 +32,10 @@ export default function Koeneraad() {
             Vanaf het moment dat pa voor werk een pc thuis kreeg, zo&apos;n unit
             met hele grote floppy&apos;s, was ik verslaafd. Ik heb heel wat
             opgestoken door om te prutsen in dat computer spul. Lekker op alles
-            kListItemkken en het ListItemefst in schermen waar ik de ballen
+            klikken en het liefst in schermen waar ik de ballen
             verstand van had, zoals de BIOS. En als je de schroeven losmaakt en
             de panelen weghaalt zie je allemaal gave bankjes, ronddraaiende
-            bladen en miljoenen kabels en ListItemchtjes. Het is daarom ook niet
+            bladen en miljoenen kabels en lichtjes. Het is daarom ook niet
             gek dat ik het concept van authenticatie en authorisatie op vroege
             leeftijd al in de praktijk heb meegekregen.
           </Text>
@@ -47,8 +47,7 @@ export default function Koeneraad() {
           <Text>
             Uiteindelijk ben ik met een omweg er achter gekomen dat ik deze
             hobby kan uitoefenen als professional. Ik werk nu als Software
-            Engineer bij Sogeti,
-            <em>onderdeel van Capgemini</em>. Ik kan bij grote spelers in hun IT
+            Engineer bij Sogeti, <em>onderdeel van Capgemini</em>. Ik kan bij grote spelers in hun IT
             keuken kijken en geniet er elk moment van. Je bent in dit vakgebied
             nooit uitgeleerd. En het internet staat vol met nieuwe tech, open
             source projecten en gedreven mensen die goed kunnen uitleggen.
@@ -60,7 +59,7 @@ export default function Koeneraad() {
                 <ListItem>Systemen samenstellen en bouwen</ListItem>
                 <ListItem>
                   Services voor thuis, te veel om op te noemen in deze
-                  ListItemst item tag maar bijv. een media server.
+                  Item item tag maar bijv. een media server.
                 </ListItem>
                 <ListItem>Netwerkjes aanleggen</ListItem>
                 <ListItem>
@@ -124,7 +123,7 @@ export default function Koeneraad() {
           </Heading>
           <UnorderedList>
             <ListItem>KVK: 78606667</ListItem>
-            <ListItem>BTW: NL003353663B14</ListItem>
+//             <ListItem>BTW: NL003353663B14</ListItem>
           </UnorderedList>
         </Box>
       </Stack>

@@ -123,7 +123,7 @@ export default function Koeneraad() {
           </Heading>
           <UnorderedList>
             <ListItem>KVK: 78606667</ListItem>
-//             <ListItem>BTW: NL003353663B14</ListItem>
+            <ListItem>BTW: NL003353663B14</ListItem>
           </UnorderedList>
         </Box>
       </Stack>
